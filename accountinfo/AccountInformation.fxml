@@ -95,7 +95,7 @@
             </Pane>
             <Pane prefHeight="100.0" prefWidth="760.0" style="-fx-background-color: #33B9F9;">
                <children>
-                  <Label layoutX="213.0" layoutY="-4.0" prefHeight="105.0" prefWidth="41.0" text="\$" textFill="WHITE">
+                  <Label layoutX="213.0" layoutY="-4.0" prefHeight="105.0" prefWidth="61.0" text="₹" textFill="WHITE">
                      <font>
                         <Font size="64.0" />
                      </font>

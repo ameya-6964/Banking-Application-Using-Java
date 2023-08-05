@@ -47,7 +47,7 @@ public class AccountInformationController implements Initializable {
         ResultSet rs = null;
         
         try{
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bank" , "root", "root");
             String sql = "SELECT * FROM userdata WHERE AccountNo=?";
             ps = con.prepareStatement(sql);

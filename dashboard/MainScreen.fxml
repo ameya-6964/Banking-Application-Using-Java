@@ -3,6 +3,8 @@
 <?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -25,17 +27,7 @@
                   </Label>
                </children>
             </Pane>
-            <Label layoutX="41.0" layoutY="127.0" text="Welcome Back,">
-               <font>
-                  <Font name="System Bold" size="30.0" />
-               </font>
-            </Label>
-            <Label fx:id="body" layoutX="96.0" layoutY="172.0" prefHeight="207.0" prefWidth="639.0" text="Label">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <Pane layoutY="456.0" prefHeight="50.0" prefWidth="760.0">
+            <Pane layoutY="451.0" prefHeight="55.0" prefWidth="760.0">
                <children>
                   <FontAwesomeIconView fill="#33b9f9" glyphName="HOME" layoutX="116.0" layoutY="34.0" size="28" />
                   <Label layoutX="152.0" layoutY="12.0" text="Blue Foundry Bank Limited, USA" textFill="#575757">
@@ -51,6 +43,16 @@
                   </Label>
                </children>
             </Pane>
+            <ImageView fitHeight="356.0" fitWidth="528.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/rupixen-com-Q59HmzK38eQ-unsplash.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="352.0" fitWidth="232.0" layoutX="528.0" layoutY="100.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/small.jpg" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </content>
