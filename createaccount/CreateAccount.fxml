@@ -100,11 +100,18 @@
                   <Font size="28.0" />
                </font>
             </Label>
-            <Button layoutX="241.0" layoutY="1400.0" mnemonicParsing="false" styleClass="login-button" stylesheets="@../design/design.css" text="Browse Picture" />
-            <Button layoutX="126.0" layoutY="1521.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="login-button" stylesheets="@../design/design.css" text="Create Account">
+            <Button layoutX="210.0" layoutY="1400.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="143.0" styleClass="login-button" stylesheets="@../design/design.css" text="Browse Picture">
+               <graphic>
+                  <FontAwesomeIconView glyphName="UPLOAD" styleClass="login-icon" />
+               </graphic>
+            </Button>
+            <Button layoutX="126.0" layoutY="1521.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="200.0" styleClass="login-button" stylesheets="@../design/design.css" text=" Create Account">
                <font>
                   <Font size="18.0" />
                </font>
+               <graphic>
+                  <FontAwesomeIconView glyphName="PLUS" styleClass="login-icon" />
+               </graphic>
             </Button>
          </children>
       </AnchorPane>
