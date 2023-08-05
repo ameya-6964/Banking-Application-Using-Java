@@ -13,7 +13,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" stylesheets="@../design/design.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginScreenController">
    <children>
-      <Pane layoutX="350.0" prefHeight="600.0" prefWidth="450.0" styleClass="login-main" stylesheets="@../design/design.css">
+      <Pane fx:id="main_area" layoutX="350.0" prefHeight="600.0" prefWidth="450.0" styleClass="login-main" stylesheets="@../design/design.css">
          <children>
             <Label layoutX="35.0" layoutY="44.0" text="Welcome" textFill="#464646">
                <font>
@@ -48,7 +48,7 @@
                   <FontAwesomeIconView glyphName="USER" size="18" styleClass="login-icon" />
                </graphic>
             </Button>
-            <Button layoutX="55.0" layoutY="439.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="300.0" styleClass="login-button" stylesheets="@../design/design.css" text=" Create New Account">
+            <Button layoutX="55.0" layoutY="439.0" mnemonicParsing="false" onMouseClicked="#createAccount" prefHeight="40.0" prefWidth="300.0" styleClass="login-button" stylesheets="@../design/design.css" text=" Create New Account">
                <font>
                   <Font name="Comic Sans MS" size="18.0" />
                </font>
