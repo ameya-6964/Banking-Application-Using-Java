@@ -20,7 +20,7 @@ public class Banking extends Application {
         stage.setScene(scene);
         stage.show();
         } catch (Exception e) {
-            System.out.println("The Error Is : " + e.getMessage());
+            System.out.println("The Error Is : " + e.getStackTrace());
         }
        
     }
