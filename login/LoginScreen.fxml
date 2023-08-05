@@ -25,12 +25,12 @@
                   <Font name="Dubai Regular" size="18.0" />
                </font>
             </Label>
-            <JFXTextField labelFloat="true" layoutX="88.0" layoutY="160.0" prefHeight="35.0" prefWidth="300.0" promptText="Account Number">
+            <JFXTextField focusColor="#007ff5" labelFloat="true" layoutX="88.0" layoutY="160.0" prefHeight="35.0" prefWidth="300.0" promptText="Account Number" unFocusColor="#6e6e6e">
                <font>
                   <Font size="18.0" />
                </font>
             </JFXTextField>
-            <JFXPasswordField labelFloat="true" layoutX="88.0" layoutY="244.0" prefHeight="35.0" prefWidth="300.0" promptText="PIN">
+            <JFXPasswordField focusColor="#007ff5" labelFloat="true" layoutX="88.0" layoutY="244.0" prefHeight="35.0" prefWidth="300.0" promptText="PIN" unFocusColor="#6e6e6e">
                <font>
                   <Font size="18.0" />
                </font>
@@ -61,7 +61,7 @@
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <FontAwesomeIconView fill="#ff0202" glyphName="CLOSE" layoutX="428.0" layoutY="20.0" size="20" styleClass="close-button" />
+            <FontAwesomeIconView fill="#ff0202" glyphName="CLOSE" layoutX="428.0" layoutY="20.0" onMouseClicked="#closeApp" size="20" styleClass="close-button" />
             <FontAwesomeIconView fill="#5e5e5e" glyphName="USER" layoutX="55.0" layoutY="185.0" size="25" text="" />
             <FontAwesomeIconView fill="#6b6b6b" glyphName="EYE" layoutX="52.0" layoutY="269.0" size="25" />
          </children>

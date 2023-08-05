@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 
 public class Banking extends Application {
@@ -16,7 +17,8 @@ public class Banking extends Application {
              Parent root = FXMLLoader.load(Banking.class.getResource("LoginScreen.fxml"));
         
         Scene scene = new Scene(root);
-        
+        scene.getStylesheets().add(getClass().getResource("/design/design.css").toExternalForm());
+        stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(scene);
         stage.show();
         } catch (Exception e) {
