@@ -25,12 +25,12 @@
                   <Font name="Dubai Regular" size="18.0" />
                </font>
             </Label>
-            <JFXTextField focusColor="#007ff5" labelFloat="true" layoutX="88.0" layoutY="160.0" prefHeight="35.0" prefWidth="300.0" promptText="Account Number" unFocusColor="#6e6e6e">
+            <JFXTextField fx:id="accountno" focusColor="#007ff5" labelFloat="true" layoutX="88.0" layoutY="160.0" prefHeight="35.0" prefWidth="300.0" promptText="Account Number" unFocusColor="#6e6e6e">
                <font>
                   <Font size="18.0" />
                </font>
             </JFXTextField>
-            <JFXPasswordField focusColor="#007ff5" labelFloat="true" layoutX="88.0" layoutY="244.0" prefHeight="35.0" prefWidth="300.0" promptText="PIN" unFocusColor="#6e6e6e">
+            <JFXPasswordField fx:id="pin" focusColor="#007ff5" labelFloat="true" layoutX="88.0" layoutY="244.0" prefHeight="35.0" prefWidth="300.0" promptText="PIN" unFocusColor="#6e6e6e">
                <font>
                   <Font size="18.0" />
                </font>
@@ -40,7 +40,7 @@
                   <Font name="Comic Sans MS Bold" size="13.0" />
                </font>
             </Button>
-            <Button layoutX="105.0" layoutY="353.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="login-button" stylesheets="@../design/design.css" text=" Login">
+            <Button layoutX="105.0" layoutY="353.0" mnemonicParsing="false" onMouseClicked="#loginAccount" prefHeight="40.0" prefWidth="200.0" styleClass="login-button" stylesheets="@../design/design.css" text=" Login">
                <font>
                   <Font name="Comic Sans MS" size="18.0" />
                </font>
