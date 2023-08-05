@@ -69,7 +69,7 @@ public class MainScreenController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        body.setText("The Bank of Spain (Spanish: Banco de España) is the central bank of Spain.\n Established in Madrid in 1782 by Charles III, today the bank is a member of \nthe European System of Central Banks and is also Spain's national competent\n authority for banking supervision within the Single Supervisory Mechanism.");
+        body.setText("The Blue Foundry Bank Group, Inc. is an American multinational investment bank and financial services company. Founded in 1869, Goldman Sachs is headquartered at 200 West Street in Lower Manhattan, with regional headquarters in London, Warsaw, Bangalore, Hong Kong, Tokyo, Dallas and Salt Lake City, and additional offices in other international financial centers.Goldman Sachs is the second largest investment bank in the world by revenue and is ranked 55th on the Fortune 500 list of the largest United States corporations by total revenue, It is considered a systemically important financial institution by the Financial Stability Board.");
         setInfo();
     }    
     

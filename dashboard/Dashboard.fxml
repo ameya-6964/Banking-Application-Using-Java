@@ -21,7 +21,7 @@
                   <Insets left="8.0" top="8.0" />
                </HBox.margin>
             </FontAwesomeIconView>
-            <Label text="Bank Of Spain Limited - Client Software" textFill="WHITE">
+            <Label text="Blue Foundry Bank - Client Software" textFill="WHITE">
                <font>
                   <Font size="17.0" />
                </font>
