@@ -55,7 +55,13 @@ public class LoginScreenController implements Initializable {
          main_area.getChildren().removeAll();
          main_area.getChildren().addAll(fxml);
     }
-    
+     @FXML
+    private void forgotPassword(MouseEvent event) throws IOException {
+        
+        Parent fxml= FXMLLoader.load(getClass().getResource("/forgotpass/ForgotPassword.fxml"));
+        main_area.getChildren().removeAll(); 
+        main_area.getChildren().addAll(fxml);
+    }
     public void loginAccount(MouseEvent event){
         Connection con=null;
         PreparedStatement ps = null;

@@ -35,7 +35,7 @@
                   <Font size="18.0" />
                </font>
             </JFXPasswordField>
-            <Button layoutX="243.0" layoutY="300.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="144.0" styleClass="login-forgot" stylesheets="@../design/design.css" text="Forgot PIN?">
+            <Button layoutX="243.0" layoutY="300.0" mnemonicParsing="false" onMouseClicked="#forgotPassword" prefHeight="26.0" prefWidth="144.0" styleClass="login-forgot" stylesheets="@../design/design.css" text="Forgot PIN?">
                <font>
                   <Font name="Comic Sans MS Bold" size="13.0" />
                </font>
