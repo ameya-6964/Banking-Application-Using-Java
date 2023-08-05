@@ -78,19 +78,25 @@ public class LoginScreenController implements Initializable {
             //JOptionPane.showMessageDialog(null, acc);
              rs = ps.executeQuery();
             if(rs.next()){
-             Alert a = new Alert(Alert.AlertType.INFORMATION);
-                a.setTitle("Acount Logged In");
-                a.setHeaderText("You Have Succesfully Logged In");
-                a.setContentText("Design Your Dashboard" );
-                a.showAndWait();               
+                ((Node)event.getSource()).getScene().getWindow().hide();
+                Parent root= FXMLLoader.load(getClass().getResource("/dashboard/Dashboard.fxml"));
+                Scene scene =new Scene(root);
+                scene.getStylesheets().add(getClass().getResource("/design/design.css").toExternalForm());
+                Stage stage = new Stage();
+                stage.initStyle(StageStyle.UNDECORATED);
+                stage.setScene(scene);
+                stage.show();
+                this.stage = stage;
+                
             }
             else
-            {   
-                Alert a = new Alert(Alert.AlertType.ERROR);
+            {   Alert a = new Alert(Alert.AlertType.ERROR);
                 a.setTitle("Error");
                 a.setHeaderText("Error in login");
                 a.setContentText("Your account number or pin is wrong. Enter again..!!!" );
                 a.showAndWait();
+                
+                
             }
             
             
