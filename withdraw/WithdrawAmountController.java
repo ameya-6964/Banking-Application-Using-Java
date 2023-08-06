@@ -140,7 +140,7 @@ public class WithdrawAmountController implements Initializable {
                        Alert a = new Alert(Alert.AlertType.INFORMATION);
                 a.setTitle("Amount Withdraw");
                 a.setHeaderText("Amount Withdrawal Sucessfull ");
-                a.setContentText("Amount "+ wda+" has been sucessfully withdrawn "+" Current Balance = "+total );
+                a.setContentText("Amount "+ wda+" has been sucessfully withdrawn "+"\nCurrent Balance = "+total );
                 a.showAndWait();
                 
                 amt_field.setText("");
