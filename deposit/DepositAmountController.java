@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package deposit;
 
 import java.net.URL;
@@ -24,11 +20,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import login.LoginScreenController;
 
-/**
- * FXML Controller class
- *
- * @author admin
- */
+
 public class DepositAmountController implements Initializable {
 
    
@@ -71,32 +63,24 @@ public class DepositAmountController implements Initializable {
         ResultSet rs = null;
         
         try{
-            Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bank?serverTimezone=UTC" , "root", "");
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bank" , "root", "root");
             String sql = "SELECT * FROM userdata WHERE AccountNo=?";
             ps = con.prepareStatement(sql);
             ps.setString(1, LoginScreenController.acc);
-            
-            
              rs = ps.executeQuery();
             if(rs.next()){
                account_no.setText(rs.getString("AccountNo"));
                balance.setText(rs.getString("Balance"));
-               
-               
-                
-                
+ 
             }
-            
-            
-            
+    
         }catch(Exception e){
                 Alert a = new Alert(Alert.AlertType.ERROR);
                 a.setTitle("Error");
                 a.setHeaderText("Error in login .");
                 a.setContentText("There is some error. PLEASE TRY AGAIN..!!!"+e.getMessage());
                 a.showAndWait();
-            
         }
     }
     
@@ -106,8 +90,8 @@ public class DepositAmountController implements Initializable {
         ResultSet rs = null;
         
         try{
-            Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bank?serverTimezone=UTC" , "root", "");
+            Class.forName("com.mysql.cj.jdbc.Driver");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bank" , "root", "root");
             String sql = "SELECT * FROM userdata WHERE AccountNo=? AND PIN=?";
             ps = con.prepareStatement(sql);
             ps.setString(1, LoginScreenController.acc);
@@ -136,7 +120,7 @@ public class DepositAmountController implements Initializable {
                        Alert a = new Alert(Alert.AlertType.INFORMATION);
                 a.setTitle("Amount deposit");
                 a.setHeaderText("Amount Deposited Sucessfully ");
-                a.setContentText("Amount "+ da+" has been sucessfully Deposited"+"\nCurrent Balance = "+total );
+                a.setContentText("Amount "+ da+" has been sucessfully Deposited "+"\n Current Balance = "+total );
                 a.showAndWait();
                 
                 amt_field.setText("");

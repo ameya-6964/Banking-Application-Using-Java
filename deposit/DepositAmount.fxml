@@ -41,7 +41,7 @@
                         <Font size="30.0" />
                      </font>
                   </Label>
-                  <Label layoutX="229.0" layoutY="176.0" text="\$">
+                  <Label layoutX="229.0" layoutY="176.0" text="₹">
                      <font>
                         <Font size="30.0" />
                      </font>
