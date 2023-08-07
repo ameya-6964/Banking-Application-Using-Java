@@ -21,11 +21,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import login.LoginScreenController;
 
-/**
- * FXML Controller class
- *
- * @author admin
- */
+
 public class WithdrawAmountController implements Initializable {
     
     
@@ -149,10 +145,7 @@ public class WithdrawAmountController implements Initializable {
                    }
                    
                }
-               
-               
-                
-                
+          
             }
             else
             {   Alert a = new Alert(Alert.AlertType.ERROR);

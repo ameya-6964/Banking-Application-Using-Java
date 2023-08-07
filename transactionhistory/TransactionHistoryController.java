@@ -271,7 +271,7 @@ public class TransactionHistoryController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        
         withdraw();
         deposit();
         transferMoney();

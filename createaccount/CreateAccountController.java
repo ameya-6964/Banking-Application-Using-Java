@@ -1,13 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package createaccount;
-
-
-
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -38,11 +29,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.FileChooser;
 import login.Banking;
-/**
- * FXML Controller class
- *
- * @author admin
- */
+
 public class CreateAccountController implements Initializable {
     
     private FileChooser filechooser= new FileChooser();
@@ -277,7 +264,7 @@ public class CreateAccountController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+        
         gender.setItems(list);
         martialstatus.setItems(list1);
         religion.setItems(list2);
