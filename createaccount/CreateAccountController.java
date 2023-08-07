@@ -195,6 +195,10 @@ public class CreateAccountController implements Initializable {
                
     }
     
+    public void backToLoginScreen() throws IOException{
+        Banking.stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("/login/LoginScreen.fxml")));
+    }
+    
     public int generateAccountNo(){
         
         Random rand = new Random();
@@ -241,6 +245,7 @@ public class CreateAccountController implements Initializable {
                 a.setContentText("Your account is created sucessfully. You can now login with your account no and pin !!!");
                 a.showAndWait();  
                 clearAllFields();
+                backToLoginScreen();
             }
             else
             {
