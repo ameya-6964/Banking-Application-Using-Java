@@ -78,7 +78,7 @@
                </font>
             </TextField>
             <ComboBox fx:id="accounttype" layoutX="55.0" layoutY="782.0" prefHeight="38.0" prefWidth="340.0" promptText="Account Type" styleClass="field-decoration" stylesheets="@../design/design.css" />
-            <ComboBox fx:id="questions" layoutX="56.0" layoutY="878.0" prefHeight="38.0" prefWidth="340.0" promptText="Sequrity Question" styleClass="field-decoration" stylesheets="@../design/design.css" />
+            <ComboBox fx:id="questions" layoutX="56.0" layoutY="878.0" prefHeight="38.0" prefWidth="340.0" promptText="Security Question" styleClass="field-decoration" stylesheets="@../design/design.css" />
             <TextField fx:id="answer" layoutX="56.0" layoutY="930.0" prefHeight="38.0" prefWidth="340.0" promptText="Answer" styleClass="field-decoration" stylesheets="@../design/design.css">
                <font>
                   <Font size="18.0" />
