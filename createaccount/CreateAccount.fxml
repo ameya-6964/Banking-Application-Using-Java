@@ -16,7 +16,7 @@
    <content>
       <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="450.0">
          <children>
-            <FontAwesomeIconView glyphName="ARROW_LEFT" layoutX="14.0" layoutY="25.0" onMouseClicked="#backToLogin" size="20" />
+            <FontAwesomeIconView glyphName="ARROW_LEFT" layoutX="14.0" layoutY="25.0" onMouseClicked="#backToLoginScreen" size="20" />
             <FontAwesomeIconView glyphName="CLOSE" layoutX="404.0" layoutY="24.0" onMouseClicked="#closeApp" size="20" wrappingWidth="10.0" />
             <Label layoutX="96.0" layoutY="37.0" text="Account Registration">
                <font>

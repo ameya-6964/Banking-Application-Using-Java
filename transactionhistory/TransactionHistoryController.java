@@ -197,7 +197,7 @@ public class TransactionHistoryController implements Initializable {
        ObservableList<History> list = FXCollections.observableArrayList();
        
        try{
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bank" , "root", "root");
             String sql = "SELECT * FROM transferamount WHERE AccountNo=?";
             ps = con.prepareStatement(sql);
@@ -239,7 +239,7 @@ public class TransactionHistoryController implements Initializable {
        ObservableList<History> list = FXCollections.observableArrayList();
        
        try{
-            Class.forName("com.mysql.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection("jdbc:mysql://localhost:3306/bank" , "root", "root");
             String sql = "SELECT * FROM transferamount WHERE SendTo=?";
             ps = con.prepareStatement(sql);
