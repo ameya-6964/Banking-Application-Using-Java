@@ -43,6 +43,10 @@ public class ForgotPasswordController implements Initializable {
         System.exit(0);
     }
     
+     public void backToLoginScreen() throws IOException{
+        Banking.stage.getScene().setRoot(FXMLLoader.load(getClass().getResource("/login/LoginScreen.fxml")));
+    }
+    
     public void recoverPassword(MouseEvent event){
         Connection con=null;
         PreparedStatement ps = null;
